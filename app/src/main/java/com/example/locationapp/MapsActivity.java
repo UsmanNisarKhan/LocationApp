@@ -9,6 +9,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -112,5 +113,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private void preparegoogleservices()
     {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+        Log.i("Tag","My meesage ");
     }
 }
